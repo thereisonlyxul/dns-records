@@ -1,0 +1,36 @@
+$ORIGIN @BIND_ZONE_DOMAIN@.
+$TTL 3600
+
+; =============================================================================
+
+@ IN SOA ns1.binaryoutcast.com. tobin.binaryoutcast.com. (
+  @BIND_ZONE_SERIAL@  ; Serial
+  10800       ; Refresh
+  3600        ; Retry
+  604800      ; Expire
+  38400       ; Negative Caching TTL
+)
+
+; =============================================================================
+
+                        IN  A       185.199.108.153
+                        IN  A       185.199.109.153
+                        IN  A       185.199.110.153
+                        IN  A       185.199.111.153
+                        IN  AAAA    2606:50c0:8000::153
+                        IN  AAAA    2606:50c0:8001::153
+                        IN  AAAA    2606:50c0:8002::153
+                        IN  AAAA    2606:50c0:8003::153
+
+                        IN  NS      ns1.binaryoutcast.com.
+                        IN  NS      ns2.binaryoutcast.com.
+
+xr                      IN  A       @BINOC_IRIDIUM_IPV4@
+xr                      IN  AAAA    @BINOC_IRIDIUM_IPV6@
+
+addons                  IN  A       @BINOC_OSMIUM_IPV4@
+addons                  IN  AAAA    @BINOC_OSMIUM_IPV6@
+
+www                     IN  CNAME   binaryoutcast.github.io.
+
+; =============================================================================
