@@ -1,5 +1,4 @@
 # dns-records
-----
 
 This repo contains the zone file for thereisonlyxul.org. The reasoning behind making the zone file public is so that the broader community can submit pull requests to add or change records.
 
